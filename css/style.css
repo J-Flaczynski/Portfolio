@@ -101,7 +101,7 @@ ul {
   transition-duration: 0.5s;
 }
 .photo {
-  background-image: url(/img/pexels-photo-892541.webp);
+  background-image: url(/img/photo.webp);
   background-size: cover;
   width: 50vw;
   height: 100vh;
