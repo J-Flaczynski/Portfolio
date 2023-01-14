@@ -1,8 +1,17 @@
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 body {
   margin: 0;
   padding: 0;
   height: 400vh;
+
   font-family: "Roboto", sans-serif;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 nav {
   position: fixed;
@@ -50,6 +59,10 @@ ul {
   height: 100vh;
 }
 #work {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(82, 88, 146);
   height: 100vh;
 }
@@ -90,6 +103,9 @@ ul {
   height: 100vh;
 }
 .about-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #232630;
   width: 50vw;
   height: 100vh;
@@ -98,4 +114,45 @@ ul {
 a {
   text-decoration: none;
   color: white;
+}
+.textbox {
+  width: 70%;
+  font-size: larger;
+  color: rgb(211, 211, 211, 0.5);
+}
+.project {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 400px;
+  width: 850px;
+  background-color: black;
+}
+.description {
+  color: white;
+  border-top: 1px solid white;
+  cursor: pointer;
+}
+.description:hover,
+.project:hover {
+  transform: scale(1.07);
+  font-size: large;
+  transition-duration: 0.5s;
+}
+#pika-redeemer {
+  background-image: url(/img/pika-redeemer.png);
+  background-size: cover;
+}
+#leagueaccounts {
+  background-image: url(/img/leagueaccounts.PNG);
+  background-size: cover;
+}
+#portfolio {
+  background-image: url(/img/portfolio.PNG);
+  background-size: cover;
+}
+@media only screen and (max-width: 800px) {
+  #work {
+    flex-direction: column;
+  }
 }
