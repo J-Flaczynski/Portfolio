@@ -6,7 +6,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  height: 400vh;
+  height: 410vh;
 
   font-family: "Roboto", sans-serif;
 }
@@ -25,6 +25,7 @@ nav {
 }
 .logo {
   margin-left: 100px;
+  cursor: pointer;
 }
 .links,
 ul {
@@ -32,6 +33,14 @@ ul {
   gap: 30px;
   text-decoration: none;
   list-style-type: none;
+  cursor: pointer;
+}
+li:hover {
+  color: rgb(223, 220, 220);
+}
+.logo:hover {
+  transform: scale(1.09);
+  transition-duration: 0.5s;
 }
 .socials {
   align-items: center;
@@ -74,9 +83,14 @@ ul {
   background-color: #232630;
   height: 100vh;
 }
-#ending {
-  background-color: rgb(49, 167, 39);
-  height: 100vh;
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+  height: 10vh;
+  background-color: #181a20;
 }
 .welcome {
   position: absolute;
@@ -218,8 +232,52 @@ input:focus {
   background-color: #292d35;
   cursor: pointer;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 480px) {
   #work {
     flex-direction: column;
+  }
+  .links,
+  ul {
+    gap: 10px;
+    font-size: small;
+  }
+  .logo {
+    margin-left: 10px;
+    font-size: small;
+  }
+  .discord,
+  .github {
+    display: none;
+  }
+  .welcome {
+    font-size: large;
+  }
+  .learn {
+    margin-top: 100px;
+  }
+  .textbox {
+    font-size: small;
+  }
+  .typewrite {
+    font-size: small;
+  }
+  #work {
+    gap: 0px;
+  }
+  .project {
+    width: 99%;
+    height: 40%;
+  }
+  #portfolio {
+    margin-bottom: 100px;
+  }
+  .project:hover {
+    transform: scale(1);
+  }
+  .form-text {
+    font-size: small;
+  }
+  textarea {
+    width: 300px;
   }
 }

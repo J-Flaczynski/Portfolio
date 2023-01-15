@@ -21,16 +21,16 @@
   </head>
   <body>
     <nav>
-      <div class="logo"><b>Jakub Flaczynski</b></div>
+      <div class="logo" onclick="home()"><b>Jakub Flaczynski</b></div>
       <div class="links">
         <ul>
-          <li>About</li>
-          <li>Work</li>
-          <li>Contact</li>
+          <li onclick="about()">About</li>
+          <li onclick="work()">Work</li>
+          <li onclick="contact()">Contact</li>
         </ul>
         <div class="socials">
-          <img class="discord" src="/img/discord-icon.png" alt="discord logo" />
-          <img class="github" src="/img/github-icon.png" alt="github logo" />
+          <a href="https://discord.gg/R26nnrqACM" target="_blank"><img class="discord" src="/img/discord-icon.png" alt="discord logo" /></a>
+          <a href="https://github.com/J-Flaczynski" target="_blank"><img class="github" src="/img/github-icon.png" alt="github logo" /></a>
         </div>
       </div>
     </nav>
@@ -43,7 +43,7 @@
             done Swiftly
           </h1>
           <!-- Call to action -->
-          <div class="learn">Learn more</div>
+          <div class="learn" onclick="about()">Learn more</div>
         </div>
       </div>
       <div class="panels" id="about">
@@ -51,6 +51,7 @@
         <div class="about-text">
           <div class="textbox">
             <h1>
+              <!-- short story about myself to peak interests -->
               <a
                 class="typewrite"
                 data-period="2000"
@@ -69,6 +70,7 @@
           </div>
         </div>
       </div>
+      <!-- listing personal projects to show abilities -->
       <div class="panels" id="work">
         <div class="project" id="pika-redeemer">
           <div class="description">
@@ -96,6 +98,7 @@
           </div>
         </div>
       </div>
+      <!-- a way to contact -->
       <div class="panels" id="contact">
         <div class="contact-me">
           <div class="form-text">
@@ -114,7 +117,15 @@
           </div>
         </div>
       </div>
-      <div class="panels" id="ending"></div>
+      <footer>
+        <div class="links">
+          <ul>
+            <li onclick="about()">About</li>
+            <li onclick="work()">Work</li>
+            <li onclick="contact()">Contact</li>
+            <a href="path-to-cv" download><li>Download CV</li></a>
+          </ul>
+      </footer>
     </div>
     <script src="/js/main.js"></script>
   </body>

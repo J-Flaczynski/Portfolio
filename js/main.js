@@ -1,3 +1,4 @@
+// typing animation changing text
 var TxtType = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -26,7 +27,7 @@ TxtType.prototype.tick = function () {
   if (this.isDeleting) {
     delta /= 2;
   }
-
+  // check if its deleting the text
   if (!this.isDeleting && this.txt === fullTxt) {
     delta = this.period;
     this.isDeleting = true;
@@ -40,7 +41,7 @@ TxtType.prototype.tick = function () {
     that.tick();
   }, delta);
 };
-
+// load in the actual writing
 window.onload = function () {
   var elements = document.getElementsByClassName("typewrite");
   for (var i = 0; i < elements.length; i++) {
@@ -50,9 +51,32 @@ window.onload = function () {
       new TxtType(elements[i], JSON.parse(toRotate), period);
     }
   }
-  // INJECT CSS
+  // injecting css
   var css = document.createElement("style");
   css.type = "text/css";
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
 };
+
+// scrolling whole "panels"
+function about() {
+  document.querySelector("#about").scrollIntoView({
+    behavior: "smooth",
+  });
+}
+function work() {
+  document.querySelector("#work").scrollIntoView({
+    behavior: "smooth",
+  });
+}
+
+function contact() {
+  document.querySelector("#contact").scrollIntoView({
+    behavior: "smooth",
+  });
+}
+function home() {
+  document.querySelector("#home").scrollIntoView({
+    behavior: "smooth",
+  });
+}
