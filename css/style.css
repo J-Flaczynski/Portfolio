@@ -1,3 +1,4 @@
+/* getting rid of the overflow */
 html {
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -10,6 +11,7 @@ body {
 
   font-family: "Roboto", sans-serif;
 }
+/* disabling scroll in the contact form */
 Contact body::-webkit-scrollbar {
   display: none;
 }
@@ -59,6 +61,7 @@ li:hover {
   transform: scale(1.1);
   transition-duration: 0.2s;
 }
+/* giving every panel a certain hight  */
 .panels {
   width: 100%;
   height: 100vh;
@@ -146,6 +149,7 @@ a {
 .typewrite {
   font-size: 60px;
 }
+/* Creating a div that will be used with every project block */
 .project {
   display: flex;
   align-items: flex-end;
@@ -240,7 +244,7 @@ input:focus {
   background-color: #292d35;
   cursor: pointer;
 }
-
+/* Making things smaller to fit a phone screen & disabling horizontal scroll */
 @media only screen and (max-width: 480px) {
   #work {
     flex-direction: column;
