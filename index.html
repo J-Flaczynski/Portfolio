@@ -39,107 +39,102 @@
       </div>
     </nav>
     <section>
-    <div class="panels">
-      <div class="panels" id="home">
-        <div class="welcome">
-          <h1>
-            Programming<br />
-            and Scripting<br />
-            done Swiftly
-          </h1>
-          <!-- Call to action -->
-          <div class="learn" onclick="about()">Learn more</div>
+      <div class="panels">
+        <div class="panels" id="home">
+          <div class="welcome">
+            <h1>
+              Programming<br />
+              and Scripting<br />
+              done Swiftly
+            </h1>
+            <!-- Call to action -->
+            <div class="learn" onclick="about()">Learn more</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panels" id="about">
+        <div class="photo"></div>
+        <div class="about-text">
+          <div class="textbox">
+            <!-- short story about myself to peak interests -->
+            <a
+              class="typewrite"
+              data-period="2000"
+              data-type='[ "Hi, my name is Jakub.", "I am Creative.", "I Like Designing.", "I Love Developing.","I enjoy Problem solving.","I love making things."]'
+            >
+              <span class="wrap"></span>
+            </a>
+            <p>
+              Welcome to my website! I'm Jakub, a 19-year-old software developer
+              with a passion for creating innovative web solutions. Proficient
+              in Java, Python and familiar with latest technology trends. Let's
+              work together to bring your ideas to life. Browse my portfolio to
+              see my skills and experience
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- listing personal projects to show abilities -->
+
+      <div class="panels" id="work">
+        <div class="project" id="pika-redeemer">
+          <div class="description">
+            <a
+              href="https://github.com/J-Flaczynski/Pika-Network-coupon-redeemer"
+              target="_blank"
+              ><p>A simple visual coupon redeemer</p></a
+            >
+          </div>
+        </div>
+        <div class="project" id="leagueaccounts">
+          <div class="description">
+            <a
+              href="https://github.com/J-Flaczynski/LeagueAccounts.net"
+              target="_blank"
+              ><p>LeagueAccounts.net, manage accounts</p></a
+            >
+          </div>
+        </div>
+        <div class="project" id="portfolio">
+          <div class="description">
+            <a href="https://github.com/J-Flaczynski/Portfolio" target="_blank"
+              ><p>My portfolio</p></a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- a way to contact -->
+      <div class="panels" id="contact">
+        <div class="contact-me">
+          <div class="form-text">
+            <h1>Got a question or a job for me?</h1>
+            <p>Contact me and i will respond as soon as possible!</p>
+            <form class="contact-form" action="php/send.php" method="post">
+              <label>Email</label><br />
+              <input type="email" name="email" required /><br /><br />
+              <label>Subject</label><br />
+              <input type="text" name="subject" required /><br /><br />
+              <label>Message</label><br />
+              <textarea id="message" name="message" required></textarea
+              ><br /><br />
+              <button class="form-btn" type="submit">Send message</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
-      <section>
-        <div class="panels" id="about">
-          <div class="photo"></div>
-          <div class="about-text">
-            <div class="textbox">
-              <!-- short story about myself to peak interests -->
-              <a
-                class="typewrite"
-                data-period="2000"
-                data-type='[ "Hi, my name is Jakub.", "I am Creative.", "I Like Designing.", "I Love Developing.","I enjoy Problem solving.","I love making things."]'
-              >
-                <span class="wrap"></span>
-              </a>
-              <p>
-                Welcome to my website! I'm Jakub, a 19-year-old software
-                developer with a passion for creating innovative web solutions.
-                Proficient in Java, Python and familiar with latest technology
-                trends. Let's work together to bring your ideas to life. Browse
-                my portfolio to see my skills and experience
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- listing personal projects to show abilities -->
-      </section>
-      <section>
-        <div class="panels" id="work">
-          <div class="project" id="pika-redeemer">
-            <div class="description">
-              <a
-                href="https://github.com/J-Flaczynski/Pika-Network-coupon-redeemer"
-                target="_blank"
-                ><p>A simple visual coupon redeemer</p></a
-              >
-            </div>
-          </div>
-          <div class="project" id="leagueaccounts">
-            <div class="description">
-              <a
-                href="https://github.com/J-Flaczynski/LeagueAccounts.net"
-                target="_blank"
-                ><p>LeagueAccounts.net, manage accounts</p></a
-              >
-            </div>
-          </div>
-          <div class="project" id="portfolio">
-            <div class="description">
-              <a
-                href="https://github.com/J-Flaczynski/Portfolio"
-                target="_blank"
-                ><p>My portfolio</p></a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <!-- a way to contact -->
-        <div class="panels" id="contact">
-          <div class="contact-me">
-            <div class="form-text">
-              <h1>Got a question or a job for me?</h1>
-              <p>Contact me and i will respond as soon as possible!</p>
-              <form class="contact-form" action="php/send.php" method="post">
-                <label>Email</label><br />
-                <input type="email" name="email" required /><br /><br />
-                <label>Subject</label><br />
-                <input type="text" name="subject" required /><br /><br />
-                <label>Message</label><br />
-                <textarea id="message" name="message" required></textarea
-                ><br /><br />
-                <button class="form-btn" type="submit">Send message</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <footer>
-        <div class="links">
-          <ul>
-            <li onclick="about()">About</li>
-            <li onclick="work()">Work</li>
-            <li onclick="contact()">Contact</li>
-            <li><a href="path-to-cv" download>Download CV</a></li>
-          </ul>
-        </div>
-      </footer>
-      <script src="js/main.js"></script>
-    </div>
+
+    <footer>
+      <div class="links">
+        <ul>
+          <li onclick="about()">About</li>
+          <li onclick="work()">Work</li>
+          <li onclick="contact()">Contact</li>
+          <li><a href="path-to-cv" download>Download CV</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
