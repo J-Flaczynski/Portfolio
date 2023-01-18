@@ -59,7 +59,7 @@ li:hover {
   height: 100vh;
 }
 #home {
-  background-image: url(img/landing-bg.jpg);
+  background-image: url(../img/landing-bg.jpg);
   background-size: cover;
   height: 100vh;
 }
@@ -114,7 +114,7 @@ footer {
   transition-duration: 0.5s;
 }
 .photo {
-  background-image: url(img/photo.webp);
+  background-image: url(../img/photo.webp);
   background-size: cover;
   width: 50vw;
   height: 100vh;
@@ -157,15 +157,15 @@ a {
   transition-duration: 0.5s;
 }
 #pika-redeemer {
-  background-image: url(img/pika-redeemer.png);
+  background-image: url(../img/pika-redeemer.png);
   background-size: cover;
 }
 #leagueaccounts {
-  background-image: url(img/leagueaccounts.PNG);
+  background-image: url(../img/leagueaccounts.PNG);
   background-size: cover;
 }
 #portfolio {
-  background-image: url(img/portfolio.PNG);
+  background-image: url(../img/portfolio.PNG);
   background-size: cover;
 }
 .contact-me {
