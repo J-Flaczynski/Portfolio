@@ -54,6 +54,11 @@ li:hover {
 .github {
   height: 35px;
 }
+.discord:hover,
+.github:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
 .panels {
   width: 100%;
   height: 100vh;
@@ -107,6 +112,7 @@ footer {
 .learn {
   border: 3px solid white;
   border-radius: 3px;
+  cursor: pointer;
 }
 .learn:hover {
   background-color: white;
@@ -136,6 +142,9 @@ a {
   width: 70%;
   font-size: larger;
   color: rgb(211, 211, 211, 0.5);
+}
+.typewrite {
+  font-size: 60px;
 }
 .project {
   display: flex;
@@ -231,6 +240,7 @@ input:focus {
   background-color: #292d35;
   cursor: pointer;
 }
+
 @media only screen and (max-width: 480px) {
   #work {
     flex-direction: column;
